@@ -117,25 +117,4 @@ let menu, animate;
   window.Helpers.setCollapsed(true, false);
 })();
 
-	// Activate tooltip
-	document.querySelector('[data-toggle="tooltip"]').tooltip();
-	
-	// Select/Deselect checkboxes
-	var checkbox = document.querySelector('table tbody input[type="checkbox"]');
-	document.querySelector("#selectAll").click(function(){
-		if(this.checked){
-			checkbox.each(function(){
-				this.checked = true;                        
-			});
-		} else{
-			checkbox.each(function(){
-				this.checked = false;                        
-			});
-		} 
-	});
-	checkbox.click(function(){
-		if(!this.checked){
-			document.querySelector("#selectAll").prop("checked", false);
-		}
-	});
 
