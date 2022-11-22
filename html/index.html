@@ -329,7 +329,7 @@
                           </button>
                           <ul class="dropdown-menu">
                             <li><button class="dropdown-item edit-button" data-bs-toggle="modal" data-bs-target="#modalCenter">Edit</button></li>
-                            <li><a class="dropdown-item" href="javascript:void(0);">Delete</a></li>
+                            <li><button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalDelete">Delete</button></li>
                           </ul>
                         </div>
                       </td>
@@ -355,7 +355,7 @@
                           </button>
                           <ul class="dropdown-menu">
                             <li><button class="dropdown-item edit-button" data-bs-toggle="modal" data-bs-target="#modalCenter">Edit</button></li>
-                            <li><a class="dropdown-item" href="javascript:void(0);">Delete</a></li>
+                            <li><button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalDelete">Delete</button></li>
                           </ul>
                         </div>
                       </td>
@@ -381,7 +381,7 @@
                           </button>
                           <ul class="dropdown-menu">
                             <li><button class="dropdown-item edit-button" data-bs-toggle="modal" data-bs-target="#modalCenter">Edit</button></li>
-                            <li><a class="dropdown-item" href="javascript:void(0);">Delete</a></li>
+                            <li><button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalDelete">Delete</button></li>
                           </ul>
                         </div>
                       </td>
@@ -407,7 +407,7 @@
                           </button>
                           <ul class="dropdown-menu">
                             <li><button class="dropdown-item edit-button" data-bs-toggle="modal" data-bs-target="#modalCenter">Edit</button></li>
-                            <li><a class="dropdown-item" href="javascript:void(0);">Delete</a></li>
+                            <li><button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalDelete">Delete</button></li>
                           </ul>
                         </div>
                       </td>
@@ -433,12 +433,12 @@
                           </button>
                           <ul class="dropdown-menu">
                             <li><button class="dropdown-item edit-button" data-bs-toggle="modal" data-bs-target="#modalCenter">Edit</button></li>
-                            <li><a class="dropdown-item" href="javascript:void(0);">Delete</a></li>
+                            <li><button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalDelete">Delete</button></li>
                           </ul>
                         </div>
                       </td>
                     </tr>
-                    <!-- Modal -->
+                    <!--Edit Modal -->
                     <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                           <div class="modal-content">
@@ -506,6 +506,32 @@
                           </div>
                         </div>
                     </div>
+                    <!-- Delete Modal -->
+                    <div class="modal fade" id="modalDelete" tabindex="-1" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalDeleteTitle">Delete Item</h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Are you sure you want to delete the Item</p>
+                            <small class="text-warning">This action cannot be undone</small>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                              Close
+                            </button>
+                            <button type="button" class="btn btn-primary">Delete Item</button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
                     </tbody>
                 </table>
               </div>

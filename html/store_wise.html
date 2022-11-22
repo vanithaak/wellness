@@ -377,9 +377,17 @@
                                   <input
                                     type="text"
                                     id="supplierNameWithTitle"
-                                    class="form-control"
+                                    class="form-control dropdown-toggle dropdown-toggle-split"
                                     placeholder="Jain Stores"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
                                   />
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="javascript:void(0);" onclick="showGenre(this)">Meher Distributors</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0);" onclick="showGenre(this)">Honey Foods</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0);" onclick="showGenre(this)">Bhadraa Enterprises</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0);" onclick="showGenre(this)">Shree Narendra Agency</a></li>
+                                  </ul>                              
                                 </div>
                             </div>
                             <div class="row g-2">
